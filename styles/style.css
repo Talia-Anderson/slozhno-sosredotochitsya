@@ -1,5 +1,133 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-image: url('/images/cover-image.png');
+  background-color: black;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+/*декоративные псевдоэлементы*/
+
+.REC-element {
+  color: var(--accent-color);
+  height: 25px;
+  position: absolute;
+  text-align:right;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 138.889% */
+  top: 22px;
+  right: 48px
+}
+
+.decor-circle {
+  background-color: var(--accent-color);
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  width: 9px;
+  height: 9px;
+  box-shadow: 0px 0px 10px var(--accent-color);
+}
+
+.corner-top {
+  position: absolute;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+  top: 20px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+.corner-bottom {
+  position: absolute;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+  bottom: 20px;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+}
+
+/*шапка*/
+
+.header {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: repeat(3, calc(1/3 * 100%)) ;
+  grid-template-columns: none;
+}
+
+.header__main-text {
+  text-shadow: 4px 4px 0 var(--accent-color);
+  color: var(--main-color);
+  align-self: center;
+}
+
+.header__text-settings {
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
+.header__info-text {
+  min-height: 71px;
+  max-width: 491px;
+  justify-self: end;
+  color: var(--text-with-background);
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 23.4px;
+  padding-right: 20px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
+}
+
+.header__theme-menu {
+  justify-self: center;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  gap: 10px;
+  justify-self: center;
+}
+
+.header__theme-menu-item {
+  list-style: none;
+}
+
+.header__theme-menu-button {
+  color: var(--accent-color);
+  width: 70px;
+  height: 26px;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  background-color: transparent;
+  border: 0;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid var(--accent-color);
+}
+
