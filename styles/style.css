@@ -37,12 +37,34 @@
   box-shadow: 0px 0px 10px var(--accent-color);
 }
 
-.corner-top {
+.decorated-zone::after,
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::before {
+  top: 20px;
+  right: 20px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  left: 10px;
+  bottom: 20px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+/* .corner-top {
   position: absolute;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
-  top: 20px;
-  right: 20px;
+  padding-bottom: calc(100vh - 20px);
+  padding-left: calc(100vw - 20px);
   height: 25px;
   width: 25px;
 }
@@ -55,12 +77,13 @@
   left: 20px;
   height: 25px;
   width: 25px;
-}
+} */
 
 /*шапка*/
 
 .header {
   display: grid;
+  position: relative;
   height: 100vh;
   grid-template-rows: repeat(3, calc(1/3 * 100%)) ;
   grid-template-columns: none;
@@ -130,4 +153,32 @@
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-color);
 }
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+}
+
+/*основа*/
+
+
+
+/*футер*/
+
+.footer {
+  height: 100vh;
+  position:relative;
+}
+
+.footer__main-text {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  color: var(--main-color);
+  text-align: center;
+  margin: auto;
+  font-family: IBM Plex Mono;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%;
+}
+
 
