@@ -167,15 +167,16 @@
 .footer {
   height: 100vh;
   position:relative;
+  display: grid;
+  place-items: center;
 }
 
 .footer__main-text {
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--main-color);
   text-align: center;
-  margin: auto;
   font-family: IBM Plex Mono;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
