@@ -8,11 +8,12 @@
 @media (prefers-color-scheme: light) {
 :root {
       /* Дублируем переменные светлой темы */ 
-    --accent-color: #ff0070;
+    --accent-color: #353430;
     --main-color: #FFC2E6;
     --text-with-background: #353430;
     --main-text-color: #353430;  
-    
+    --shade-color: #ff0070;
+    --background-color: #FF8DCB;
   }
 
   .page {
@@ -35,10 +36,12 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   background-image: url('/images/cover-image-light.png');
-  --accent-color: #ff0070;
+  --accent-color: #353430;
   --main-color: #FFC2E6;
   --text-with-background: #353430;
   --main-text-color: #353430; 
+  --shade-color: #ff0070;
+  --background-color: #FF8DCB
 }
 
 .page.theme_light .decor-circle {

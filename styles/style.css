@@ -59,14 +59,14 @@
 }
 
 .title-decor {
-  background-color: var(--accent-color);
+  background-color: var(--background-color);
 }
 
 .link-style {
   color: var(--main-text-color);
   outline: none;
   text-decoration: none;
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shade-color);
 }
 
 .link-style:hover {
@@ -88,7 +88,7 @@
 }
 
 .header__main-text {
-  text-shadow: 4px 4px 0 var(--accent-color);
+  text-shadow: 4px 4px 0 var(--shade-color);
   color: var(--main-color);
   align-self: center;
 }
@@ -271,7 +271,7 @@
 }
 
 .footer__main-text {
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shade-color);
   color: var(--main-color);
   text-align: center;
   font-family: IBM Plex Mono;
@@ -281,4 +281,7 @@
   line-height: 82.5%;
 }
 
+@media (width <= 768) {
+  
 
+}
