@@ -381,4 +381,8 @@
   grid-column: 1/2;
 }
 
+.section__why {
+  margin-top: 40px;
+}
+
 }
