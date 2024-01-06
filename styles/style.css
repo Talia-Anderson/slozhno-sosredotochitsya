@@ -95,7 +95,7 @@
 
 .header__text-settings {
   font-family: IBM Plex Mono;
-  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%;
@@ -105,13 +105,13 @@
   min-height: 71px;
   max-width: 491px;
   justify-self: end;
+  align-self: center;
   color: var(--text-with-background);
   font-family: IBM Plex Mono;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px;
-  padding-right: 20px;
 }
 
 .header__theme-menu {
@@ -124,6 +124,7 @@
   display: flex;
   gap: 10px;
   justify-self: center;
+  padding: 0;
 }
 
 .header__theme-menu-item {
@@ -281,7 +282,78 @@
   line-height: 82.5%;
 }
 
-@media (width <= 768) {
+@media (width <= 768px) {
+  .header__theme-menu {
+    justify-self: right;
+    align-self: center;
+  }
   
+  .header__theme-menu-list {
+    justify-self: right;
+    flex-direction: column;
+  }
+
+  .section__what {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: auto;
+  }
+
+  .grid-options-2 {
+    grid-column: 1/2;
+  }
+
+}
+
+@media (width <= 375px) {
+  .header__text-settings {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .footer__main-text {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .section__why {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto;
+  }
+
+  .section__how {
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: auto;
+  }
+
+
+.decorated-zone::after,
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.decorated-zone::before {
+  top: 0;
+  right: 0;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  left: 0;
+  bottom: 20px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.REC-element {
+  top: 0;
+  right: 30px
+}
+
+.decor-circle {
+  top: 8px;
+  right: 8px;
+}
 
 }
