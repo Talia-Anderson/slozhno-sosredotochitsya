@@ -40,3 +40,15 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+a:visited {
+}
+
+a:focus {
+}
+
+a:hover {
+}
+
+a:active {
+}

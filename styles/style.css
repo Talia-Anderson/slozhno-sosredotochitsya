@@ -63,6 +63,21 @@
   background-color: var(--accent-color);
 }
 
+.link-style {
+  color: var(--main-text-color);
+  outline: none;
+  text-decoration: none;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+
+.link-style:focus {
+  outline: 1px solid var(--main-text-color)
+}
+
 /*шапка*/
 
 .header {
@@ -132,6 +147,10 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  text-decoration: underline;
 }
 
 .header__theme-menu-button_active {
@@ -216,7 +235,7 @@
 
 .section__gallary {
   display: grid;
-  grid-template-rows: auto fit-content fit-content fit-content;
+  grid-template-rows: auto auto fit-content fit-content;
   grid-template-columns: repeat(3, fit-content);
   gap: 20px;
 }
@@ -237,7 +256,7 @@
 
 /* .gallary__grid-option-ice-cream {
   grid-row: 2/4;
-} */
+}  */
 
 .gallary__grid-option-street {
   grid-column: 2/4;
