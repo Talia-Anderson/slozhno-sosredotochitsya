@@ -196,7 +196,6 @@
 }
 
 .card-topic-point {
-  padding-bottom: 0;
   color: var(--text-with-background);
   font-family: var(--font, monospace);
   font-weight: 700;
@@ -221,6 +220,7 @@
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px;
+  padding-top: 10px;
 }
 
 .section__why {
