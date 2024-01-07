@@ -4,6 +4,31 @@
   переключая тему
 */
 
+
+.page.theme_dark {
+  /* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+  background-image: url('/images/cover-image-dark.png');
+  --accent-color: #ff0070;
+  --main-color: #DB00FF;
+  --text-with-background: #000028;
+  --main-text-color: #F1B2CE;
+  --shade-color: #ff0070;
+  --background-color: #ff0070;
+  --shadow-color-in-main-text: #ff0070;
+  --font: IBM Plex Mono;
+}
+
+.theme_dark .REC-element {
+  display: block;
+}
+
+.theme_dark .decor-circle {
+  display: block;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
   --accent-color: #ff0070;
@@ -47,31 +72,12 @@
   @media (width < 376px) {
     .REC-element {
       top: 10px;
-      right: 28px;
+      right: 38px;
     }
   
     .decor-circle {
       top: 20px;
-      right: 10px;
+      right: 20px;
     }
   }
-
 }
-
-.page.theme_dark {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
-  background-image: url('/images/cover-image-dark.png');
-  --accent-color: #ff0070;
-  --main-color: #DB00FF;
-  --text-with-background: #000028;
-  --main-text-color: #F1B2CE;
-  --shade-color: #ff0070;
-  --background-color: #ff0070;
-  --shadow-color-in-main-text: #ff0070;
-  --font: IBM Plex Mono;
-}
-
-
