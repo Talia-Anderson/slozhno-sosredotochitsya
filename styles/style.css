@@ -191,6 +191,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 23.4px; /* 130% */
+  padding-bottom: 0;
 }
 
 .card-topic-point-not-bold {
@@ -245,18 +246,22 @@
 
 .gallary__grid-option-sunset {
   grid-column: 1/3;
+  grid-row: 2/3;
 }
 
 .gallary__grid-option-tape {
   grid-row: 3/5;
+  grid-column: 1/2;
 }
 
-/* .gallary__grid-option-ice-cream {
+.gallary__grid-option-ice-cream {
   grid-row: 2/4;
-} */
+  grid-column: 3/4;
+}
 
 .gallary__grid-option-street {
   grid-column: 2/4;
+  grid-row: 4/5;
 }
 
 /*футер*/
@@ -266,6 +271,7 @@
   position: relative;
   display: grid;
   place-items: center;
+  margin-top: 20px;
 }
 
 .footer__main-text {
@@ -358,22 +364,27 @@
 
   .gallary__grid-option-sunset {
     grid-column: 1/2;
+    grid-row: 2/3;
   }
 
   .gallary__grid-option-tape {
     grid-column: 1/2;
+    grid-row: 4/5;
   }
 
-  /* .gallary__grid-option-ice-cream {
-  grid-row: 2/4;
-} */
+  .gallary__grid-option-ice-cream {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  } 
 
   .gallary__grid-option-street {
     grid-column: 1/2;
+    grid-row: 6/7;
   }
 
   .grid-options-4 {
     grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   .section__why {
