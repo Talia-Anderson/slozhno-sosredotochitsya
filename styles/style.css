@@ -6,6 +6,7 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+  
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -14,7 +15,7 @@
 .REC-element {
   position: absolute;
   top: 22px;
-  right: 48px;
+  right: 28px;
   height: 25px;
   color: var(--accent-color);
   font-family: var(--font, monospace);
@@ -28,7 +29,7 @@
 .decor-circle {
   position: absolute;
   top: 30px;
-  right: 30px;
+  right: 20px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -46,7 +47,7 @@
 
 .decorated-zone::before {
   top: 20px;
-  right: 20px;
+  right: 0;
   position: absolute;
   border-top: 1px solid var(--accent-color);
   border-right: 1px solid var(--accent-color);
@@ -54,7 +55,7 @@
 
 .decorated-zone::after {
   bottom: 20px;
-  left: 10px;
+  left: 0;
   position: absolute;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
@@ -119,7 +120,6 @@
   font-style: normal;
   line-height: 23.4px;
   align-self: center;
-  padding-right: 20px;
 }
 
 .header__theme-menu {
@@ -332,6 +332,11 @@
     justify-self: right;
   }
 
+  /* .header__info-text {
+    width: 364px;
+    height: 117px;
+  } */
+
   .section__what {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
@@ -362,22 +367,20 @@
 
   .decorated-zone::before {
     top: 10px;
-    right: 10px;
   }
 
   .decorated-zone::after {
     bottom: 10px;
-    left: 10px;
   }
 
   .REC-element {
     top: 10px;
-    right: 40px;
+    right: 25px;
   }
 
   .decor-circle {
     top: 20px;
-    right: 20px;
+    right: 0;
   }
 
   .header__text-settings {

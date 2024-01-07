@@ -22,7 +22,7 @@
   .REC-element {
     position: absolute;
     top: 22px;
-    right: 48px;
+    right: 28px;
     height: 25px;
     color: var(--accent-color);
     font-family: var(--font, monospace);
@@ -36,7 +36,7 @@
   .decor-circle {
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 10px;
     width: 9px;
     height: 9px;
     border-radius: 50%;
@@ -47,12 +47,12 @@
   @media (width < 376px) {
     .REC-element {
       top: 10px;
-      right: 40px;
+      right: 28px;
     }
   
     .decor-circle {
       top: 20px;
-      right: 20px;
+      right: 10px;
     }
   }
 
