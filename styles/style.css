@@ -2,38 +2,38 @@
 
 .page {
   background-color: black;
-  background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 /*декоративные псевдоэлементы*/
 
 .REC-element {
-  color: var(--accent-color);
-  height: 25px;
   position: absolute;
-  text-align: right;
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px; /* 138.889% */
   top: 22px;
   right: 48px;
+  height: 25px;
+  color: var(--accent-color);
+  font-family: IBM Plex Mono;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 25px; /* 138.889% */
+  text-align: right;
 }
 
 .decor-circle {
-  background-color: var(--accent-color);
   position: absolute;
   top: 30px;
   right: 30px;
-  border-radius: 50%;
   width: 9px;
   height: 9px;
+  border-radius: 50%;
   box-shadow: 0px 0px 10px var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .decorated-zone::after,
@@ -52,8 +52,8 @@
 }
 
 .decorated-zone::after {
-  left: 10px;
   bottom: 20px;
+  left: 10px;
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
 }
@@ -63,8 +63,8 @@
 }
 
 .link-style {
-  color: var(--main-text-color);
   outline: none;
+  color: var(--main-text-color);
   text-decoration: none;
   text-shadow: 4px 4px 0 var(--shade-color);
 }
@@ -74,55 +74,59 @@
 }
 
 .link-style:focus {
+  outline: none;
+}
+
+.link-style:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
 /*шапка*/
 
 .header {
-  display: grid;
   position: relative;
-  height: 100vh;
-  grid-template-rows: repeat(3, calc(1 / 3 * 100%));
+  display: grid;
   grid-template-columns: none;
+  grid-template-rows: repeat(3, calc(1 / 3 * 100%));
+  height: 100vh;
 }
 
 .header__main-text {
-  text-shadow: 4px 4px 0 var(--shade-color);
-  color: var(--main-color);
   align-self: center;
+  color: var(--main-color);
+  text-shadow: 4px 4px 0 var(--shade-color);
 }
 
 .header__text-settings {
   font-family: IBM Plex Mono;
+  font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
-  font-weight: 700;
   line-height: 82.5%;
 }
 
 .header__info-text {
-  min-height: 71px;
-  max-width: 491px;
   justify-self: end;
+  max-width: 491px;
+  min-height: 71px;
   color: var(--text-with-background);
   font-family: IBM Plex Mono;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px;
 }
 
 .header__theme-menu {
   justify-self: center;
-  padding-top: 0;
   margin-top: 0;
+  padding-top: 0;
 }
 
 .header__theme-menu-list {
   display: flex;
-  gap: 10px;
   justify-self: center;
+  gap: 10px;
   padding: 0;
 }
 
@@ -131,24 +135,24 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
   width: 70px;
   height: 26px;
-  text-align: center;
+  border: 0;
+  color: var(--accent-color);
   font-family: IBM Plex Mono;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 18px;
+  text-align: center;
   background-color: transparent;
-  border: 0;
 }
 
 .header__theme-menu-button:hover {
   border: 1px solid var(--accent-color);
 }
 
-.header__theme-menu-button:focus {
+.header__theme-menu-button:focus-visible {
   text-decoration: underline;
 }
 
@@ -177,63 +181,63 @@
 .card-topic {
   color: var(--accent-color);
   font-family: IBM Plex Mono;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px;
 }
 
 .card-topic-point {
+  padding-bottom: 0;
   color: var(--text-with-background);
   font-family: IBM Plex Mono;
+  font-weight: 700;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 23.4px;
-  padding-bottom: 0;
 }
 
 .card-topic-point-not-bold {
   color: var(--text-with-background);
   font-family: IBM Plex Mono;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 23.4px;
 }
 
 .card-topic-point-text {
   color: var(--main-text-color);
   font-family: IBM Plex Mono;
+  font-weight: 400;
   font-size: 18px;
   font-style: normal;
-  font-weight: 400;
   line-height: 23.4px;
 }
 
 .section__why {
-  margin-top: 60px;
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr minmax(min-content, 2fr);
+  grid-template-rows: auto;
+  margin-top: 60px;
 }
 
 .section__what {
   display: grid;
-  grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 
 .section__how {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: 1fr minmax(min-content, 2fr);
+  grid-template-rows: auto;
 }
 
 .section__gallary {
   display: grid;
-  grid-template-rows: repeat(4, auto);
   grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(4, auto);
   gap: 20px;
 }
 
@@ -249,13 +253,13 @@
 }
 
 .gallary__grid-option-tape {
-  grid-row: 3/5;
   grid-column: 1/2;
+  grid-row: 3/5;
 }
 
 .gallary__grid-option-ice-cream {
-  grid-row: 2/4;
   grid-column: 3/4;
+  grid-row: 2/4;
 }
 
 .gallary__grid-option-street {
@@ -266,22 +270,22 @@
 /*футер*/
 
 .footer {
-  height: 100vh;
   position: relative;
   display: grid;
   place-items: center;
+  height: 100vh;
   margin-top: 20px;
 }
 
 .footer__main-text {
-  text-shadow: 2px 2px 0 var(--shade-color);
   color: var(--main-color);
-  text-align: center;
   font-family: IBM Plex Mono;
+  font-weight: 700;
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
-  font-weight: 700;
   line-height: 82.5%;
+  text-align: center;
+  text-shadow: 2px 2px 0 var(--shade-color);
 }
 
 @media (width <= 768px) {
@@ -291,13 +295,13 @@
   }
 
   .header__theme-menu-list {
-    justify-self: right;
     flex-direction: column;
+    justify-self: right;
   }
 
   .section__what {
-    grid-template-rows: repeat(4, auto);
     grid-template-columns: auto;
+    grid-template-rows: repeat(4, auto);
   }
 
   .grid-options-2 {
@@ -323,8 +327,8 @@
   }
 
   .decorated-zone::after {
-    left: 0;
     bottom: 20px;
+    left: 0;
     border-bottom: 1px solid var(--accent-color);
     border-left: 1px solid var(--accent-color);
   }
@@ -348,19 +352,19 @@
   }
 
   .section__why {
-    grid-template-rows: repeat(3, auto);
     grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
     margin-top: 20px;
   }
 
   .section__how {
-    grid-template-rows: repeat(7, auto);
     grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
   }
 
   .section__gallary {
-    grid-template-rows: repeat(6, auto);
     grid-template-columns: auto;
+    grid-template-rows: repeat(6, auto);
   }
 
   .gallary__grid-option-sunset {
