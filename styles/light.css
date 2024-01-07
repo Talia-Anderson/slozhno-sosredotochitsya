@@ -11,20 +11,13 @@
     --main-text-color: #353430;  
     --shade-color: #ff0070;
     --background-color: #FF8DCB;
+    --shadow-color-in-main-text: #FF8DCB;
+    --font: IBM Plex Mono;
   }
 
   .page {
     background-image: url('/images/cover-image-light.png');
   }
-
-  .REC-element {
-    display: none;
-  }
-  
-  .decor-circle {
-    display: none;
-  }
-
 }
 
 .page.theme_light {
@@ -39,6 +32,8 @@
   --main-text-color: #353430; 
   --shade-color: #ff0070;
   --background-color: #FF8DCB;
+  --shadow-color-in-main-text: #FF8DCB;
+  --font: IBM Plex Mono;
 }
 
 .page.theme_light .decor-circle {
