@@ -105,7 +105,6 @@
   min-height: 71px;
   max-width: 491px;
   justify-self: end;
-  align-self: center;
   color: var(--text-with-background);
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -181,7 +180,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 
 .card-topic-point {
@@ -190,7 +189,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
   padding-bottom: 0;
 }
 
@@ -200,7 +199,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 
 .card-topic-point-text {
@@ -209,7 +208,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 23.4px; /* 130% */
+  line-height: 23.4px;
 }
 
 .section__why {
@@ -307,23 +306,6 @@
 }
 
 @media (width <= 375px) {
-  .header__text-settings {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .footer__main-text {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-
-  .section__why {
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: auto;
-  }
-
-  .section__how {
-    grid-template-rows: repeat(7, auto);
-    grid-template-columns: auto;
-  }
 
   .decorated-zone::after,
   .decorated-zone::before {
@@ -357,6 +339,25 @@
     right: 8px;
   }
 
+  .header__text-settings {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .footer__main-text {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .section__why {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto;
+    margin-top: 20px;
+  }
+
+  .section__how {
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: auto;
+  }
+
   .section__gallary {
     grid-template-rows: repeat(6, auto);
     grid-template-columns: auto;
@@ -375,7 +376,7 @@
   .gallary__grid-option-ice-cream {
     grid-column: 1/2;
     grid-row: 3/4;
-  } 
+  }
 
   .gallary__grid-option-street {
     grid-column: 1/2;
@@ -387,7 +388,4 @@
     grid-row: 1/2;
   }
 
-  .section__why {
-    margin-top: 20px;
-  }
 }

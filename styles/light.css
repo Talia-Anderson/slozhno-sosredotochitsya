@@ -3,11 +3,8 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
-
 @media (prefers-color-scheme: light) {
 :root {
-      /* Дублируем переменные светлой темы */ 
     --accent-color: #353430;
     --main-color: #FFC2E6;
     --text-with-background: #353430;
