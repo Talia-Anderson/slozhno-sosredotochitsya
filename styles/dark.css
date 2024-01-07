@@ -43,6 +43,19 @@
     box-shadow: 0px 0px 10px var(--accent-color);
     background-color: var(--accent-color);
   }
+
+  @media (width < 376px) {
+    .REC-element {
+      top: 10px;
+      right: 40px;
+    }
+  
+    .decor-circle {
+      top: 20px;
+      right: 20px;
+    }
+  }
+
 }
 
 .page.theme_dark {
