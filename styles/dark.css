@@ -44,40 +44,4 @@
     background-image: url('/images/cover-image-dark.png');
   }
 
-  .REC-element {
-    position: absolute;
-    top: 22px;
-    right: 28px;
-    height: 25px;
-    color: var(--accent-color);
-    font-family: var(--font, monospace);
-    font-weight: 400;
-    font-size: 18px;
-    font-style: normal;
-    line-height: 25px; /* 138.889% */
-    text-align: right;
-  }
-  
-  .decor-circle {
-    position: absolute;
-    top: 30px;
-    right: 10px;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px var(--accent-color);
-    background-color: var(--accent-color);
-  }
-
-  @media (width < 376px) {
-    .REC-element {
-      top: 10px;
-      right: 38px;
-    }
-  
-    .decor-circle {
-      top: 20px;
-      right: 20px;
-    }
-  }
 }

@@ -29,7 +29,7 @@
 .decor-circle {
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 10px;
   width: 9px;
   height: 9px;
   border-radius: 50%;
@@ -331,11 +331,6 @@
     flex-direction: column;
     justify-self: right;
   }
-
-  /* .header__info-text {
-    width: 364px;
-    height: 117px;
-  } */
 
   .section__what {
     grid-template-columns: auto;
