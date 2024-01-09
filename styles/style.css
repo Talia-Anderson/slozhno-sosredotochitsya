@@ -123,6 +123,7 @@
   line-height: 23.4px;
   align-self: center;
   margin-right: 20px;
+  margin-bottom: 25px;
 }
 
 .header__theme-menu {
@@ -332,6 +333,7 @@
   .header__theme-menu {
     justify-self: right;
     align-self: center;
+    margin-right: 20px;
   }
 
   .header__theme-menu-list {
