@@ -7,9 +7,16 @@
 }
 
 body {
-  min-inline-size: 375px;
+  min-inline-size: 355px;
   max-inline-size: 1440px;
   margin: 0 20px 0 20px;
+}
+
+@media (width < 767px) {
+  body {
+    margin: 0 10px 0 10px;
+  }
+  
 }
 
 h1,
@@ -41,9 +48,4 @@ a {
   line-height: inherit;
 }
 
-@media (width < 376px) {
-  body {
-    margin: 0 10px 0 10px;
-  }
-  
-}
+
