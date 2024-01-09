@@ -379,7 +379,7 @@
 
   .decorated-zone::after {
     bottom: 10px;
-    left: 10px
+    left: 10px;
   }
 
   .REC-element {
@@ -394,6 +394,11 @@
 
   .header__text-settings {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header__info-text {
+    margin-right: 10px;
+    margin-left: 10px;
   }
 
   .footer__main-text {
@@ -412,6 +417,7 @@
   }
 
   .section__what {
+    grid-template-columns: auto;
     margin-bottom: 50px;
   }
 
@@ -446,6 +452,22 @@
   .gallary__grid-option-street {
     grid-column: 1/2;
     grid-row: 6/7;
+  }
+
+  .grid-options-2 {
+    grid-column: 1/2;
+  }
+
+  .grid-options-2-column-1 {
+    grid-column: 1/2;
+  }
+  
+  .grid-options-2-column-2 {
+    grid-column: 1/2;
+  }
+  
+  .grid-options-2-column-3 {
+    grid-column: 1/2;
   }
 
   .grid-options-3 {
