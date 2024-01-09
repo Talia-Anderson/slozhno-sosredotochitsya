@@ -410,7 +410,6 @@
   }
 
   .section__gallary {
-    padding-top: 10px;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
     margin-bottom: 50px;
