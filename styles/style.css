@@ -332,6 +332,11 @@
     justify-self: right;
   }
 
+  .header__info-text {
+    max-width: 364px;
+    min-height: 117px;
+  }
+
   .section__what {
     grid-template-columns: auto;
     grid-template-rows: repeat(4, auto);
@@ -391,7 +396,6 @@
     grid-template-columns: auto;
     grid-template-rows: repeat(3, auto);
     margin-top: 40px;
-    gap: 10px;
     margin-bottom: 50px;
   }
 
@@ -402,7 +406,6 @@
   .section__how {
     grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
-    gap: 10px;
     margin-bottom: 50px;
   }
 
@@ -410,7 +413,6 @@
     padding-top: 10px;
     grid-template-columns: auto;
     grid-template-rows: repeat(6, auto);
-    gap: 10px;
     margin-bottom: 50px;
   }
 
@@ -432,6 +434,10 @@
   .gallary__grid-option-street {
     grid-column: 1/2;
     grid-row: 6/7;
+  }
+
+  .grid-options-3 {
+    grid-row: 1/2;
   }
 
   .grid-options-4 {
