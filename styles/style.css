@@ -392,6 +392,11 @@
     right: 20px;
   }
 
+  .header__theme-menu {
+    padding-top: 10px;
+    margin-right: 10px;
+  }
+
   .header__text-settings {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
