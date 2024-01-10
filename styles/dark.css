@@ -18,7 +18,7 @@
   --shade-color: #ff0070;
   --background-color: #ff0070;
   --shadow-color-in-main-text: #ff0070;
-  --font: IBM Plex Mono;
+  --font: 'IBM Plex Mono';
 }
 
 .theme_dark .REC-element {
