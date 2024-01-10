@@ -251,7 +251,7 @@
 
 .section__why {
   display: grid;
-  grid-template-columns: 0,971fr minmax(min-content, 2fr);
+  grid-template-columns: 0.971fr minmax(min-content, 2fr);
   grid-template-rows: auto;
   gap: 20px;
   margin-top: 60px;
@@ -268,7 +268,7 @@
 
 .section__how {
   display: grid;
-  grid-template-columns: 0,971fr minmax(min-content, 2fr);
+  grid-template-columns: 0.971fr minmax(min-content, 2fr);
   grid-template-rows: auto;
   gap: 20px;
   margin-bottom: 80px;
